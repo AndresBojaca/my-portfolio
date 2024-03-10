@@ -1,0 +1,51 @@
+ul.job-list li{
+    position: relative;
+}
+
+
+ul.job-list li > div:first-child {
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+
+ul.job-list li:last-child div::after {
+    height: calc(100% - 131.1px) !important;
+}
+
+
+ul.job-list li > div:first-child::after {
+    content: '';
+    width: 1px;
+    background-color: #9ca3af99;
+    height: -webkit-fill-available;
+    display: block;
+    position: absolute;
+    top: 39px;
+    left: 11px;
+}
+
+.line-courve {
+    position: absolute;
+    top: 3px;
+    left: -31px;
+    width: 25px;
+    height: 10px;
+    border-top: 1.4px solid #9ca3af99;
+    border: 1.4px solid #9ca3af99;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-radius: 0px 0px 0px 20px;
+}
+.company-img{
+    translate: -5px;
+    margin-right: -5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 0px 1.3px #9ca3af99;
+    -moz-box-shadow: 0px 0px 0px 1.3px #9ca3af99;
+    box-shadow: 0px 0px 0px 1.3px #9ca3af99;
+}
