@@ -1,5 +1,5 @@
 import React from "react";
-import '../hero-section/HeroSection.css'
+import './HeroSection.css'
 
 const HeroSection = () => {
   return (
@@ -8,12 +8,12 @@ const HeroSection = () => {
         <div className="place-self-center text-center w-full relative">
           <div className="hero-elements">
             <h1 className="font-bold pb-1 text-3xl sm:text-4xl sm:text-sm md:text-5xl lg:text-6xl lg:leading-[1.3] ">Hola, Soy Andrés Bojacá. <p className="font-normal">Full Stack Developer</p></h1>
-            <p className=" text-gray-400 lg:text-lg mb-4 sm:text-sm max-w-4xl">¡Hola! Soy Andrés Bojacá, apasionado por la tecnología y la innovación. Aquí encontrarás mis proyectos destacados, donde transformo ideas en soluciones concretas. ¡Bienvenido a mi portafolio!
+            <p className=" text-gray-400 lg:text-lg mb-4 sm:text-sm max-w-4xl">Apasionado por la tecnología y la innovación. Aquí encontrarás mis proyectos destacados, donde transformo ideas en soluciones concretas. ¡Bienvenido a mi portafolio!
             </p>
-            <button className=" bg-sky-600 py-4 px-8">Saber más</button>
+            <button className=" rounded-lg bg-sky-600 py-4 px-8 shadow-[0_0_50px_5px_] shadow-sky-400/30 hover:scale-105 transition-all">Saber más</button>
           </div>
           <div className="profile-picture">
-            <img src="https://i.imgur.com/bJhzEkj.png" className="absolute shadow-sky-400 top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="" width="600px" height="auto" />
+            <img src="https://i.imgur.com/bJhzEkj.png" className="absolute top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="" width="600px" height="auto" />
           </div>
         </div>
       </div>

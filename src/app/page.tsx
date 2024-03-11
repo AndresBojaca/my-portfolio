@@ -1,5 +1,5 @@
-import HeroSection from "./components/hero-section/HeroSection";
-import JobExperience from "./components/job-experience/JobExperience";
+import HeroSection from "./ui/sections/hero-section/HeroSection";
+import JobExperience from "./ui/sections/job-experience/JobExperience";
 
 
 export default function Home() {

@@ -1,11 +1,11 @@
-export interface Job {
+export type Job = {
   id: number;
   company: string;
   positions: Position[];
   logoUrl: string;
 }
 
-export interface Position {
+export type Position = {
   position?: string;
   description?: string;
   startDate?: string;
