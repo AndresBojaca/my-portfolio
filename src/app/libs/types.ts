@@ -10,4 +10,5 @@ export type Position = {
   description?: string;
   startDate?: string;
   endDate?: string;
+  skills?: Array<[]>;
 }

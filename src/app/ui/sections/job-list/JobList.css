@@ -1,23 +1,26 @@
-ul.job-list li{
+ul.job-list li {
     position: relative;
 }
 
-
-ul.job-list li > div:first-child {
-    padding-bottom: 1.5rem;
-    margin-bottom: 0.3rem;
-}
+/* 
+ul.job-list li>div:first-child {
+} */
 
 
 ul.job-list li:last-child div::after {
-    height: calc(100% - 131.1px) !important;
+    height: 100px !important;
+    transition: height .8s;
 }
 
+ul.job-list li:last-child div::after > .job-1:hover{
+    background-color: orange !important;
 
-ul.job-list li > div:first-child::after {
+}
+
+ul.job-list li>div:first-child::after {
     content: '';
     width: 1px;
-    background-color: #9ca3af99;
+    background-color: #9caaaf99;
     height: -webkit-fill-available;
     display: block;
     position: absolute;
@@ -37,7 +40,8 @@ ul.job-list li > div:first-child::after {
     border-right-color: transparent;
     border-radius: 0px 0px 0px 20px;
 }
-.company-img{
+
+.company-img {
     translate: -5px;
     margin-right: -5px;
     width: 35px;
@@ -49,3 +53,36 @@ ul.job-list li > div:first-child::after {
     -moz-box-shadow: 0px 0px 0px 1.3px #9ca3af99;
     box-shadow: 0px 0px 0px 1.3px #9ca3af99;
 }
+.job{
+    padding-bottom: .8rem;
+}
+
+.skills {
+    transition: all .8s;
+    height: 0;
+}
+
+.skills p {
+    opacity: 0;
+    transition: all .8s;
+
+}
+
+.job:hover .skills {
+    transition: all .8s;
+    padding-top: .6rem;
+    height: 30px;
+}
+
+.job:hover .skills p {
+    transition: opacity .8s;
+    opacity: 1;
+}
+
+@media (max-width: theme('screens.lg')) {
+    /* Estilos para pantallas pequeñas (mínimo de 640px) */
+    .job:hover .skills {
+        height: 60px;
+    }
+  }
+  
