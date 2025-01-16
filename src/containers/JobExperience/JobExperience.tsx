@@ -1,6 +1,6 @@
 import React from "react";
 import './JobExperience.css';
-import JobList from '../job-list/JobList';
+import JobList from '../../components/JobList/JobList';
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 

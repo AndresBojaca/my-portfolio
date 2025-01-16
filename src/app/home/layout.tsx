@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { ThemeProvider } from '../../context/ThemeContext';
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Andrés Bojacá",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

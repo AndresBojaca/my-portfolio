@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState, useRef } from "react";
-import { Job } from '../../../libs/types';
-import '../job-list/JobList.css';
-import SkeletonJobList from "../job-list/SkeletonJobList";
+import { Job } from '../../app/libs/types';
+import './JobList.css';
+import SkeletonJobList from "./SkeletonJobList";
 
 interface Props {
   jobs: Job[];
