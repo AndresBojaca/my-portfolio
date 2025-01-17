@@ -88,7 +88,7 @@ const JobList = () => {
                             {position.position}
                           </p>
                           <span className="mb-2 text-sm opacity-60">
-                            {position.startDate} - {position.endDate}
+                            {position.startDate} — {position.endDate}
                           </span>
                         </div>
                         <p className="text-dark text-sm description">
