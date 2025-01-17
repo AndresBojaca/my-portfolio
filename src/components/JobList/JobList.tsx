@@ -48,13 +48,14 @@ const JobList = () => {
   };
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/portfolio/jobs')
+    const host = process.env.NEXT_PUBLIC_HOST || 'localhost:3000';
+    fetch(`http://${host}/api/portfolio/jobs`)
       .then(response => response.json())
       .then(data => {
-        setTimeout(() => {
-          setLoading(false);
-          setJobs(data);
-        }, 1000);
+      setTimeout(() => {
+        setLoading(false);
+        setJobs(data);
+      }, 1000);
       })
       .catch(error => console.error('Error fetching jobs:', error));
   }, []);
