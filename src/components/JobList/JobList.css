@@ -2,75 +2,91 @@ ul.job-list li {
     position: relative;
 }
 
-/* 
-ul.job-list li>div:first-child {
-} */
 
-
-ul.job-list li:last-child div::after {
-    height: 100px !important;
-    transition: height .8s;
-}
-
-ul.job-list li:last-child div::after > .job-1:hover{
-    background-color: orange !important;
-
-}
-
-ul.job-list li>div:first-child::after {
-    content: '';
-    width: 1px;
-    background-color: #9caaaf99;
-    height: -webkit-fill-available;
-    display: block;
-    position: absolute;
-    top: 39px;
-    left: 11px;
+.job-list-container {
+    position: relative;
+    width: auto;
 }
 
 .line-courve {
     position: absolute;
     top: 3px;
-    left: -31px;
+    left: -32px;
     width: 25px;
     height: 10px;
     border-top: 1.4px solid #9ca3af99;
     border: 1.4px solid #9ca3af99;
     border-top-color: transparent;
+    border-left-color: transparent;
     border-right-color: transparent;
-    border-radius: 0px 0px 0px 20px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        z-index: 1;
+    }
 }
+
 
 .company-img {
     translate: -5px;
     margin-right: -5px;
-    width: 35px;
-    height: 35px;
-    border-radius: .5rem;
-    background-color: transparent;
-    -webkit-box-shadow: 0px 0px 0px 1.3px #9ca3af99;
-    -moz-box-shadow: 0px 0px 0px 1.3px #9ca3af99;
-    box-shadow: 0px 0px 0px 1.3px #9ca3af99;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 3px;
+    border: 2px solid #8b5cf6;
 }
+
+ul.job-list li:last-child .job::after {
+    height: 20px;
+}
+
 .job{
     padding-bottom: .8rem;
+    &::after {
+        content: '';
+        width: 2px;
+        height: 130%;
+        background-color: #9caaaf99;
+        position: absolute;
+        top: -5px;
+        left: -32px;
+        z-index: -1;
+        transition: height .5s ease;
+    }
+}
+
+.description{
+    transition: all .8s;
+    opacity: 0.4;
+}
+
+.job:hover .description{
+    opacity: 1;
 }
 
 .skills {
     transition: all .8s;
-    height: 0;
+    max-height: 0;
 }
 
 .skills p {
     opacity: 0;
-    transition: all .8s;
+    transition: all .4s;
 
 }
 
 .job:hover .skills {
-    transition: all .8s;
+    transition: all .5s;
     padding-top: .6rem;
-    height: 30px;
+    max-height: 75px;
 }
 
 .job:hover .skills p {

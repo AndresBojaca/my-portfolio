@@ -12,7 +12,7 @@ export default function Home() {
     <main className={`${font.className} flex min-h-screen flex-col mx-auto`}>
       <ThemeSwitcher />
       <HeroSection />
-      <Projects />
+      {/* <Projects /> */}
       <JobExperience />
     </main>
   );
