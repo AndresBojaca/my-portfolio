@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "../../../libs/utils";
+import { cn } from "../../app/libs/utils";
 import { AnimatePresence, Variants, motion } from "framer-motion";
 
 interface GradualSpacingProps {

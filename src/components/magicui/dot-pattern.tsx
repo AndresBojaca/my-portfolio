@@ -1,4 +1,4 @@
-import { cn } from "../../../libs/utils";
+import { cn } from "../../app/libs/utils";
 import { useId } from "react";
 
 interface DotPatternProps {
