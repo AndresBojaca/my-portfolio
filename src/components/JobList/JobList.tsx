@@ -49,7 +49,7 @@ const JobList = () => {
 
   useEffect(() => {
     const host = process.env.NEXT_PUBLIC_HOST || 'localhost:3000';
-    fetch(`http://${host}/portfolio/jobs`)
+    fetch(`http://${host}/api/portfolio/jobs`)
       .then(response => response.json())
       .then(data => {
       setTimeout(() => {
