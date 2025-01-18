@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server'
 import { JobsResponse } from './mocks/mock.types'
 import ResponseData  from './mocks/mock.json'
 
-
 export async function GET() {
   const convertedData: JobsResponse[] = ResponseData.map(job => ({
     id: job.id,
@@ -17,5 +16,10 @@ export async function GET() {
     logoUrl: job.logoUrl
   }));
 
-  return NextResponse.json(convertedData);
+  const response = NextResponse.json(convertedData);
+  response.headers.set('Access-Control-Allow-Origin', '*');
+  response.headers.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  return response;
 }
