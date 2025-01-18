@@ -1,4 +1,4 @@
-ul.job-list li {
+ul.job-list li.job-list-item {
     position: relative;
 }
 
@@ -10,20 +10,15 @@ ul.job-list li {
 
 .line-courve {
     position: absolute;
-    top: 3px;
-    left: -32px;
+    top: 12px;
+    left: -31px;
     width: 25px;
-    height: 10px;
-    border-top: 1.4px solid #9ca3af99;
-    border: 1.4px solid #9ca3af99;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-
+    height: 2px;
+    background-color: #9ca3af99;
     &::after{
         content: '';
         position: absolute;
-        top: 3px;
+        top: -4px;
         left: -5px;
         width: 10px;
         height: 10px;
@@ -44,16 +39,15 @@ ul.job-list li {
     border: 2px solid #8b5cf6;
 }
 
-ul.job-list li:last-child .job::after {
-    height: 20px;
+ul.job-list li:last-child .job:last-child::after {
+    height: 15px;
 }
 
 .job{
-    padding-bottom: .8rem;
     &::after {
         content: '';
         width: 2px;
-        height: 130%;
+        height: 118%;
         background-color: #9caaaf99;
         position: absolute;
         top: -5px;
@@ -77,19 +71,20 @@ ul.job-list li:last-child .job::after {
     max-height: 0;
 }
 
-.skills p {
+.skills div:first-of-type {
     opacity: 0;
     transition: all .4s;
 
 }
 
 .job:hover .skills {
+    margin-top: .7rem;
     transition: all .5s;
     padding-top: .6rem;
     max-height: 75px;
 }
 
-.job:hover .skills p {
+.job:hover .skills div:first-of-type {
     transition: opacity .8s;
     opacity: 1;
 }
@@ -97,7 +92,7 @@ ul.job-list li:last-child .job::after {
 @media (max-width: theme('screens.lg')) {
     /* Estilos para pantallas pequeñas (mínimo de 640px) */
     .job:hover .skills {
-        height: 60px;
+        max-height: 130px;
     }
   }
   

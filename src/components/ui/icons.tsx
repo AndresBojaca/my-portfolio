@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaBootstrap, FaWordpress, FaJenkins } from "react-icons/fa";
-import { SiLit, SiPolymerproject, SiJquery, SiMysql, SiSonarqube, SiTailwindcss, SiTypescript, SiDjango } from "react-icons/si";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaBootstrap, FaWordpress, FaJenkins, FaGitAlt } from "react-icons/fa";
+import { SiLit, SiPolymerproject, SiJquery, SiMysql, SiSonarqube, SiTailwindcss, SiTypescript, SiDjango, SiMoleculer } from "react-icons/si";
 import { TbTestPipe } from "react-icons/tb";
 
 export type IconType = {
@@ -28,11 +28,12 @@ const iconMap: { [key: string]: JSX.Element } = {
   "Tailwind": <SiTailwindcss />,
   "Polymer.js": <SiPolymerproject />,
   "Lit-Element": <SiLit />,
-  "CELLS": <TbTestPipe />,
+  "CELLS (BBVA)": <SiMoleculer />,
   "Test e2e": <TbTestPipe />,
   "Twig": <FaPhp />,
   "Laravel": <FaPhp />,
   "Django": <SiDjango />,
+  "Git": <FaGitAlt />,
 };
 
 export const getIconLogo = (key: string, className?: string): JSX.Element | null => {
