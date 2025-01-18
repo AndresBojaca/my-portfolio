@@ -15,7 +15,7 @@ const JobList = () => {
   useEffect(() => {
     const host = process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000';
     fetch(`${host}/api/portfolio/jobs`, {
-      mode: 'no-cors',
+      mode: 'no-cors'
     })
       .then(response => response.json())
       .then(data => {
