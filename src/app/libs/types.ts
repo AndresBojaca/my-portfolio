@@ -5,9 +5,13 @@ export type Job = {
   logoUrl: string;
 }
 
+export type PositionDescription = {
+  description: string;
+}
+
 export type Position = {
   position?: string;
-  description?: string;
+  description?: Array<PositionDescription>;
   startDate?: string;
   endDate?: string;
   skills?: Array<[]>;

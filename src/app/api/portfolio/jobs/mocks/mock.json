@@ -3,23 +3,31 @@
     "id": 1,
     "company": "NEORIS",
     "positions": [
-    {
-      "position": "Software Developer Analyst",
-      "description": "Participación en proyectos para el área del banco BBVA, para el aplicativo interno (GloMo),llevando a cabo procedimientos de despliegue de aplicaciones, testing y pruebas. (GloMo)",
-      "startDate": "Ene 2023",
-      "endDate": "Actualidad",
-      "skills": [
-      "CELLS",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Test e2e",
-      "Jenkins",
-      "SonarQube",
-      "Polymer.js",
-      "Lit-Element"
-      ]
-    }
+      {
+        "position": "Software Developer Analyst",
+        "description": [
+          "Participación activa en proyectos del área del banco BBVA, trabajando en el aplicativo interno (GloMo).",
+          "Brindar capacitaciones CELLS para el desarrollo de aplicaciones web con Polymer.js y Lit-Element. a nuevos talentos.",
+          "Realización de despliegues controlados de aplicaciones y seguimiento de los procesos.",
+          "Diseño y ejecución de pruebas funcionales y pruebas end-to-end para garantizar la calidad del software.",
+          "Colaboración directa con equipos funcionales y técnicos para resolver problemas críticos del sistema.",
+          "Documentación técnica detallada de los procedimientos implementados para asegurar la trazabilidad."
+        ],
+        "startDate": "2023",
+        "endDate": "Actualidad",
+        "skills": [
+          "CELLS (BBVA)",
+          "HTML",
+          "CSS",
+          "Git",
+          "JavaScript",
+          "Test e2e",
+          "Jenkins",
+          "SonarQube",
+          "Polymer.js",
+          "Lit-Element"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/neoris_logo.jpg"
   },
@@ -27,20 +35,27 @@
     "id": 2,
     "company": "AECSA",
     "positions": [
-    {
-      "position": "Desarrollador Senior",
-      "description": "Resolución de casos de error para las herramientas internas. Análisis detallado para la buena implementación de soluciones efectivas el buen funcionamiento",
-      "startDate": "Ago 2023",
-      "endDate": "Sep 2023",
-      "skills": [
-      "PHP",
-      "MySQL",
-      "JavaScript",
-      "jQuery",
-      "CSS",
-      "Bootstrap"
-      ]
-    }
+      {
+        "position": "Desarrollador Senior",
+        "description": [
+          "Identificación y resolución de errores críticos en herramientas internas, mejorando su estabilidad.",
+          "Análisis detallado de problemas para implementar soluciones sostenibles y efectivas.",
+          "Optimización y desarrollo de módulos en las herramientas existentes para mejorar la integración.",
+          "Colaboración con equipos multifuncionales para establecer estrategias ágiles y cumplir objetivos.",
+          "Documentación y comunicación clara de los cambios y mejoras realizadas."
+        ],
+        "startDate": "Ago",
+        "endDate": "Sep 2023",
+        "skills": [
+          "PHP",
+          "MySQL",
+          "Git",
+          "JavaScript",
+          "jQuery",
+          "CSS",
+          "Bootstrap"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/aecsa_logo.jpg"
   },
@@ -48,37 +63,51 @@
     "id": 3,
     "company": "GoDoWorks",
     "positions": [
-    {
-      "position": "FrontEnd Manager Senior",
-      "description": "Participación en el desarrollo de soluciones front-end para la gestion de toda la parte visual, funcional de la herramienta web. También implementar nuevas personalizaciones para los clientes.",
-      "startDate": "Mar 2021",
-      "endDate": "May 2022",
-      "skills": [
-      "PHP",
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Bootstrap",
-      "Twig",
-      "MySQL",
-      "jQuery"
-      ]
-    },
-    {
-      "position": "Desarrollador Web",
-      "description": "Participé en la inclusión de nuevas funcionalidades y reformas visuales para el sistema, tabien llevaba a cabo el análisis y resolucion de bugs dentro del sistéma.",
-      "startDate": "Mar 2019",
-      "endDate": "Feb 2021",
-      "skills": [
-      "PHP",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "MySQL",
-      "jQuery"
-      ]
-    }
+      {
+        "position": "FrontEnd Manager Senior",
+        "description": [
+          "Liderazgo en el diseño y desarrollo de soluciones front-end personalizadas para clientes.",
+          "Implementación de nuevas características y personalizaciones enfocadas en la experiencia del usuario.",
+          "Optimización del rendimiento de interfaces para mejorar tiempos de carga y funcionalidad.",
+          "Colaboración con equipos de diseño para asegurar la alineación con lineamientos visuales.",
+          "Supervisión del equipo para garantizar entregas de alta calidad y dentro de los plazos."
+        ],
+        "startDate": "2021",
+        "endDate": "2022",
+        "skills": [
+          "PHP",
+          "HTML",
+          "JavaScript",
+          "CSS",
+          "Bootstrap",
+          "Git",
+          "Twig",
+          "MySQL",
+          "jQuery"
+        ]
+      },
+      {
+        "position": "Desarrollador Web",
+        "description": [
+          "Inclusión de nuevas funcionalidades y mejoras visuales en el sistema interno.",
+          "Análisis detallado y resolución de bugs para asegurar la estabilidad del software.",
+          "Refactorización de código para mejorar la mantenibilidad y escalabilidad de las aplicaciones.",
+          "Colaboración con equipos técnicos para implementar las mejores prácticas de desarrollo.",
+          "Documentación clara de las soluciones y procesos implementados."
+        ],
+        "startDate": "2019",
+        "endDate": "2021",
+        "skills": [
+          "PHP",
+          "HTML",
+          "CSS",
+          "Git",
+          "JavaScript",
+          "Bootstrap",
+          "MySQL",
+          "jQuery"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/godoworks_logo.jpg"
   },
@@ -86,22 +115,29 @@
     "id": 4,
     "company": "App3ar Companny",
     "positions": [
-    {
-      "position": "CEO y Desarrollador Senior",
-      "description": "Mi primera experiencia como emprendedor, liderando un equipo de desarrollo, gestionando clientes y brindando feedback de ventas para impulsar el crecimiento y éxito continuo de la empresa.",
-      "startDate": "Nov 2020",
-      "endDate": "Mar 2022",
-      "skills": [
-      "WordPress",
-      "React Native",
-      "React.js",
-      "CSS",
-      "JavaScript",
-      "Tailwind",
-      "MySQL",
-      "NodeJS"
-      ]
-    }
+      {
+        "position": "CEO y Desarrollador Senior",
+        "description": [
+          "Lideré un equipo de desarrollo, gestionando clientes y estableciendo procesos eficientes.",
+          "Implementé estrategias para el crecimiento empresarial y la retención de clientes clave.",
+          "Diseñé soluciones tecnológicas innovadoras para aumentar la satisfacción del cliente.",
+          "Realicé análisis de mercado para identificar nuevas oportunidades de negocio.",
+          "Desarrollé sistemas internos que mejoraron significativamente la productividad y eficiencia operativa."
+        ],
+        "startDate": "2020",
+        "endDate": "2022",
+        "skills": [
+          "WordPress",
+          "React Native",
+          "React.js",
+          "CSS",
+          "Git",
+          "JavaScript",
+          "Tailwind",
+          "MySQL",
+          "NodeJS"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/app3arcom_logo.jpg"
   },
@@ -109,35 +145,47 @@
     "id": 5,
     "company": "Grupo Append",
     "positions": [
-    {
-      "position": "Desarrollador FulStack",
-      "description": "Desarrollo de aplicaciones web complejas utilizando tecnologías FrontEnd y BackEnd siempre siguiendo estándares y metodologías de desarrollo ágil.",
-      "startDate": "Feb 2019",
-      "endDate": "Mar 2019",
-      "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "PHP",
-      "Laravel",
-      "MySQL"
-      ]
-    },
-    {
-      "position": "Desarrollador FrontEnd",
-      "description": "Participación en desarrollo e implementación de páginas web interactivas de los productos internos de la compañia, siempre siguiendo un diseño base.",
-      "startDate": "Ene 2019",
-      "endDate": "Feb 2019",
-      "skills": [
-      "PHP",
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Bootstrap",
-      "MySQL",
-      "jQuery"
-      ]
-    }
+      {
+        "position": "Desarrollador FulStack",
+        "description": [
+          "Diseñé y desarrollé aplicaciones web robustas utilizando tecnologías modernas de front-end y back-end.",
+          "Implementé integraciones con bases de datos optimizadas para consultas más eficientes.",
+          "Apliqué metodologías de desarrollo ágil para entregar proyectos en plazos establecidos.",
+          "Colaboré con equipos multidisciplinarios para traducir requisitos funcionales en soluciones técnicas.",
+          "Realicé pruebas y mejoras constantes para garantizar la calidad del software entregado."
+        ],
+        "startDate": "Feb",
+        "endDate": "Mar 2019",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "Git",
+          "Bootstrap",
+          "Laravel",
+          "MySQL"
+        ]
+      },
+      {
+        "position": "Desarrollador FrontEnd",
+        "description": [
+          "Desarrollo de páginas web interactivas basadas en diseños predefinidos por el equipo de diseño.",
+          "Implementación de soluciones modulares y escalables para facilitar actualizaciones futuras.",
+          "Realización de pruebas en navegadores para garantizar compatibilidad y diseño responsivo.",
+          "Optimización de interfaces para mejorar la experiencia del usuario en dispositivos móviles.",
+          "Colaboración activa con desarrolladores back-end para una integración fluida de sistemas."
+        ],
+        "startDate": "Ene",
+        "endDate": "Feb 2019",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Git",
+          "Bootstrap"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/1630521081825.jpg"
   },
@@ -145,22 +193,29 @@
     "id": 6,
     "company": "GoDoWorks",
     "positions": [
-    {
-      "position": "Desarrollador FrontEnd",
-      "description": "Participación en desarrollo e implementación de páginas web interactivas de los productos internos de la compañia, siempre siguiendo un diseño base.",
-      "startDate": "Ene 2019",
-      "endDate": "Feb 2019",
-      "skills": [
-      "PHP",
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Bootstrap",
-      "MySQL",
-      "jQuery"
-      ]
-    }
+      {
+        "position": "Desarrollador FrontEnd",
+        "description": [
+          "Desarrollo e implementación de páginas web interactivas siguiendo estándares de diseño.",
+          "Optimización del rendimiento y accesibilidad de las aplicaciones web.",
+          "Implementación de funcionalidades adicionales para mejorar la experiencia del usuario.",
+          "Solución de errores existentes y mejora continua del sistema interno.",
+          "Aseguramiento de la compatibilidad en múltiples navegadores y dispositivos."
+        ],
+        "startDate": "Ene",
+        "endDate": "Feb 2019",
+        "skills": [
+          "PHP",
+          "Laravel",
+          "HTML",
+          "JavaScript",
+          "CSS",
+          "Bootstrap",
+          "MySQL",
+          "jQuery"
+        ]
+      }
     ],
     "logoUrl": "https://s3.us-west-2.amazonaws.com/andresbojaca.site/godoworks_logo.jpg"
   }
-  ]
+]

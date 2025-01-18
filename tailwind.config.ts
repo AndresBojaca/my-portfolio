@@ -58,6 +58,10 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      listStyleType: {
+        square: "square",
+        circle: "circle",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -67,10 +71,22 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "ld-float-btt-in": {
+          "0%": {         
+            animation: "cubic-bezier(0.2242,0.7499,0.3142,0.8148)",
+            transform: "translate(0,14.925%)",
+            opacity: ".005"
+          },
+          "100%": { 
+            transform: "translate(0,0)",
+            opacity: "1"
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "ld-float-btt-in": "ld-float-btt-in 1s 1 linear forwards",
       },
     },
   },

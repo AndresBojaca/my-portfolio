@@ -5,7 +5,7 @@
 @layer base {
   :root {
 
-    --foreground: rgb(0, 0, 0);
+    --foreground: rgb(17, 24, 36);
     --background: rgb(255, 255, 255);
 
     --card: 0 0% 100%;
@@ -36,8 +36,8 @@
     --radius: 0.5rem;
 
     --bg-color-light: white;
-    --text-color-light: #111824;
-    --bg-color-dark: #111824;
+    --text-color-light: #373C46;
+    --bg-color-dark: #373C46;
     --text-color-dark: #ffffff;
   }
 
