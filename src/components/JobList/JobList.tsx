@@ -15,9 +15,7 @@ const JobList = () => {
   useEffect(() => {
     const host = process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000';
     fetch(`${host}/api/portfolio/jobs`, {
-      headers: {
-        'Access-Control-Allow-Origin': '*'
-      }
+      mode: 'no-cors',
     })
       .then(response => response.json())
       .then(data => {
