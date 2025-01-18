@@ -1,5 +1,8 @@
 'use client';
+
 import { RxCalendar } from "react-icons/rx";
+import { IoLocationOutline } from "react-icons/io5";
+
 import React, { useEffect, useState } from "react";
 import { getIconLogo } from "../ui/icons";
 import './JobList.css';
@@ -54,7 +57,7 @@ const JobList = () => {
                             {position.position}
                           </p>
                           <span className="mb-2 text-sm opacity-60 flex items-center gap-2">
-                          <RxCalendar /> {position.startDate} — {position.endDate}
+                          <RxCalendar /> {position.startDate} — {position.endDate} <IoLocationOutline className="ml-1" /> Bogotá, Colombia
                           </span>
                         </div>
                         <div className="text-dark text-base description">
