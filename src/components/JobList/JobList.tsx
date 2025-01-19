@@ -9,15 +9,16 @@ import './JobList.css';
 import { Job } from '../../app/libs/types';
 import SkeletonJobList from "./SkeletonJobList";
 
+const fetchData = async () => {
+  const response = await fetch(`api/portfolio/jobs`);
+  return response.json();
+}
+
 const JobList = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const host = process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000';
-    fetch(`${host}/api/portfolio/jobs`, {
-      mode: 'no-cors'
-    })
-      .then(response => response.json())
+    fetchData()
       .then(data => {
         setTimeout(() => {
           setLoading(false);
