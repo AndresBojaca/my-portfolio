@@ -14,13 +14,11 @@ const fetchData = async () => {
   return response.json();
 }
 
-
 const JobList = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetchData()
-      .then(response => response.json())
       .then(data => {
         setTimeout(() => {
           setLoading(false);
