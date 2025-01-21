@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import { JobsResponse } from './mocks/mock.types'
-import ResponseData  from './mocks/mock.json'
+import { JobsResponse } from './mocks/data.types'
+import ResponseData  from './mocks/data.json'
 
 
 export async function GET() {
