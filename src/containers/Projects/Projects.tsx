@@ -1,80 +1,71 @@
-import React from "react";
-import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
-import './Projects.css';
+'use client';
+
+import React, { useEffect, useState } from "react";
+import type { Projects, GithubProject } from '../../app/libs/types';
+import ProjectCard from "../../components/Projects/ProjectCard";
 import {
-    BellIcon,
-    CalendarIcon,
-    FileTextIcon,
-    GlobeIcon,
-    InputIcon,
+  BellIcon
 } from "@radix-ui/react-icons";
+import './Projects.css';
 
+//TODO #1. Poner loader
+//TODO #2. Poner mensaje de error
 
-const features = [
-    {
-        Icon: FileTextIcon,
-        name: "Save your files",
-        description: "We automatically save your files as you type.",
-        href: "/",
-        cta: "Learn more",
-        background: <img src="https://picsum.photos/1920/1080" className="absolute w-full h-full bg-cover opacity-30" />,
-        className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
-    },
-    {
-        Icon: InputIcon,
-        name: "Full text search",
-        description: "Search through all your files in one place.",
-        href: "/",
-        cta: "Learn more",
-        background: <img src="https://picsum.photos/1920/1080" className="absolute w-full h-full bg-cover opacity-30" />,
-        className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
-    },
-    {
-        Icon: GlobeIcon,
-        name: "Multilingual",
-        description: "Supports 100+ languages and counting.",
-        href: "/",
-        cta: "Learn more",
-        background: <img src="https://picsum.photos/1920/1080" className="absolute w-full h-full bg-cover opacity-30" />,
-        className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
-    },
-    {
-        Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Use the calendar to filter your files by date.",
-        href: "/",
-        cta: "Learn more",
-        background: <img src="https://picsum.photos/1920/1080" className="absolute w-full h-full bg-cover opacity-30" />,
-        className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-    },
-    {
-        Icon: BellIcon,
-        name: "Notifications",
-        description:
-            "Get notified when someone shares a file or mentions you in a comment.",
-        href: "/",
-        cta: "Learn more",
-        background: <img src="https://picsum.photos/1920/1080" className="absolute w-full h-full bg-cover opacity-30" />,
-        className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
-    },
-];
+const fetchGithubRepos = async () => {
+  const response = await fetch(`https://api.github.com/users/AndresBojaca/repos`)
+  return response.json();
+}
 
 const Projects = () => {
 
-    return (
-        <section className="min-h-[100vh] bg-black bg-opacity-5">
-            <div className="py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl text-center md:text-left lg:text-left">
-                <h1 className="text-2xl font-bold">Proyectos</h1>
-                <div className="mt-[4rem]">
-                    <BentoGrid className="lg:grid-rows-3">
-                        {features.map((feature) => (
-                            <BentoCard key={feature.name} {...feature}/>
-                        ))}
-                    </BentoGrid>
-                </div>
+  const [features, setFeatures] = useState<Projects[]>([]);
+
+
+  useEffect(() => {
+
+
+
+    fetchGithubRepos()
+      .then(data => {
+        // Filter by topics
+        const topicsFilter = data.filter((project: { topics: string[], visibility: string }) => 
+          project.topics 
+          && 
+          project.topics.includes('portfolio') 
+          && project.visibility === 'public');
+
+        // Map projects
+        const projects = topicsFilter.map((project: GithubProject, index: number) => {
+          const { id, name, html_url, description, topics } = project;
+          return {
+            id,
+            name,
+            description,
+            url: html_url,
+            topics
+          }
+        });
+
+        setFeatures(projects);
+        console.log(projects);
+
+      });
+  }, []);
+
+  return (
+    <section className="min-h-[100vh]">
+    <div className="py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-1xl text-center md:text-left lg:text-left">
+        <h1 className="text-2xl font-bold">Proyectos</h1>
+        <div className="mt-[4rem]">
+            <div className="grid grid-cols-2 gap-4">
+              {features.map((feature) => (
+                <ProjectCard key={feature.id} name={feature.name} description={feature.description} href={feature.url} tecnologies={feature.topics} />
+              ))}
             </div>
-        </section>
-    );
+        </div>
+    </div>
+</section>
+  );
 }
 
 
