@@ -18,16 +18,3 @@
     background: linear-gradient(0deg, black 0%, transparent 90%);
     /* background: radial-gradient(circle, transparent 60%, rgb(0 0 0) 100%); */
 }
-
-.hero-elements {
-    margin-top: 30rem;
-    position: relative;
-    z-index: 2;
-}
-
-
-@media (max-width: theme('screens.lg')) {
-    .hero-elements {
-        margin-top: 25rem;
-    }
-  }

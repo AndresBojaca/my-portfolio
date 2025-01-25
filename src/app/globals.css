@@ -35,10 +35,15 @@
 
     --radius: 0.5rem;
 
-    --bg-color-light: white;
-    --text-color-light: #373C46;
-    --bg-color-dark: #0c121e;
-    --text-color-dark: #ffffff;
+    --bg-color-light: #F8FAFC;
+    --text-color-light: #0F172A;
+    --bg-color-dark: #0F172A;
+    --text-color-dark: #F8FAFC;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
   }
 
   .dark {
@@ -69,13 +74,18 @@
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: rgb(255, 255, 255);
-    --background: rgb(12, 18, 30);
+    --foreground: rgb(248, 250, 252);
+    --background: rgb(15, 23, 42);
   }
 }
 

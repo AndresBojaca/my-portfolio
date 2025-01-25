@@ -3,6 +3,7 @@ import JobExperience from "../../containers/JobExperience/JobExperience";
 import ThemeSwitcher from '../../components/Theme/ThemeSwitcher';
 import Projects from "@/containers/Projects/Projects";
 import { Onest } from "next/font/google";
+import { Dock } from "@/components/ui/dock";
 const font = Onest({ subsets: ["latin"] });
 
 
