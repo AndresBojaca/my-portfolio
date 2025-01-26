@@ -6,9 +6,10 @@
       {
         "position": "Software Developer Analyst",
         "description": [
-            "Participación en proyectos del banco BBVA, trabajando en el aplicativo interno (GloMo), desarrollando nuevas funcionalidades y mejorando las existentes.",
-            "Capacitaciones CELLS para desarrollo web con Polymer.js y Lit-Element, adquiriendo habilidades avanzadas en estas tecnologías.",
-            "Despliegues controlados y seguimiento de procesos, asegurando la calidad y estabilidad del software en producción."
+            "BRICKELL (BBVA) - Desarrollo de la feature completa de 'TRANSFERENCIAS INTERNAS', planteamiento de objetivos y desarrollo de funcionalidades en arquitectura CELLS (Componentes UI, DM), compilacion, testing y resolucion de bugs. (Sept – Actualidad)",
+            "HORIZON (BBVA) - Desarrollo de features y diferentes funcionalidades en arquitectura CELLS para la actualización y transición de servicios locales a globales, algunas como Customer Logins, Economic Data y Product Detail. - (Enero– Septiembre)",
+            "HORIZON (BBVA) - Desarrollo de features y diferentes funcionalidades para la actualización y transición de servicios locales a globales en su primera etapa, elaboración de un componente caudalímetro para el flujo de usuarios- (2023, Mayo- Diciembre)",
+            "CHANNELS (BBVA) - Análisis y resolución de incidencias de la aplicación GLOMO, desarrollando diferentes soluciones a bugs con distintas prioridades- (2023, Abril - Mayo)"
           ],
           "startDate": "2023",
           "endDate": "Actualidad",
@@ -33,11 +34,7 @@
         "positions": [
           {
           "position": "Desarrollador Senior",
-          "description": [
-            "Resolución de errores críticos, garantizando la continuidad operativa del sistema.",
-            "Optimización de módulos, mejorando el rendimiento y la eficiencia del software.",
-            "Colaboración en estrategias ágiles, participando en la planificación y ejecución de sprints."
-          ],
+            "description": "Resolución de errores críticos, asegurando la estabilidad y el correcto funcionamiento del sistema. Optimización de módulos existentes, mejorando el rendimiento y la eficiencia del código. Contrubución a proyectos y funcionalidades de manejo interno.",
           "startDate": "Ago",
           "endDate": "Sep 2023",
           "skills": [
@@ -58,11 +55,7 @@
         "positions": [
           {
           "position": "FrontEnd Manager Senior",
-          "description": [
-            "Diseño y desarrollo de soluciones front-end, liderando proyectos desde la concepción hasta la implementación.",
-            "Implementación de nuevas características, mejorando la experiencia del usuario y la funcionalidad del sitio.",
-            "Supervisión del equipo, asegurando la calidad del código y el cumplimiento de los plazos."
-          ],
+            "description": "Desarrollé componentes y gestioné el diseño y la experiencia visual de herramientas web, asegurando un look and feel consistente y atractivo. Personalicé soluciones para clientes, implementé marcas blancas en la plataforma y elaboré propuestas innovadoras de diseño y desarrollo. Trabajé con tecnologías de vanguardia.",
           "startDate": "2021",
           "endDate": "2022",
           "skills": [
@@ -78,11 +71,7 @@
           },
           {
           "position": "Desarrollador Web",
-          "description": [
-            "Inclusión de nuevas funcionalidades, ampliando las capacidades del sitio web.",
-            "Resolución de bugs, mejorando la estabilidad y el rendimiento del sistema.",
-            "Refactorización de código, optimizando la estructura y la legibilidad del código existente."
-          ],
+          "description": "Inclusión de nuevas funcionalidades, ampliando las capacidades del sitio web. Resolución de bugs, mejorando la estabilidad y el rendimiento del sistema. Refactorización de código, optimizando la estructura y la legibilidad del código existente.",
           "startDate": "2019",
           "endDate": "2021",
           "skills": [
@@ -104,11 +93,7 @@
         "positions": [
           {
           "position": "CEO y Desarrollador Senior",
-          "description": [
-            "Gestión de equipo y clientes, coordinando proyectos y asegurando la satisfacción del cliente.",
-            "Implementación de estrategias empresariales, definiendo la visión y los objetivos de la empresa.",
-            "Desarrollo de soluciones tecnológicas, creando productos innovadores y de alta calidad."
-          ],
+          "description": "Fundé y gestioné mi propia empresa, donde me encargué de atender y fidelizar clientes mediante soluciones personalizadas adaptadas a sus necesidades. Administré recursos de forma eficiente, lideré un equipo de trabajo y desarrollé proyectos personalizados. Mi enfoque estuvo siempre en garantizar la calidad del servicio y cumplir con los objetivos establecidos, promoviendo una experiencia positiva para los clientes.",
           "startDate": "2020",
           "endDate": "2022",
           "skills": [
@@ -131,11 +116,7 @@
         "positions": [
           {
           "position": "Desarrollador FulStack",
-          "description": [
-            "Desarrollo de aplicaciones web, creando interfaces de usuario intuitivas y funcionales.",
-            "Integraciones con bases de datos, asegurando la correcta gestión y almacenamiento de datos.",
-            "Aplicación de metodologías ágiles, participando en la planificación y ejecución de sprints."
-          ],
+          "description": "Trabajé como desarrollador Full Stack, participando en el desarrollo de aplicaciones y productos tanto propios como para clientes. Fuí responsable de la gestión y desarrollo de dos productos internos, además de crear páginas web personalizadas. También lideré procesos de selección de personal y asumí un rol de liderazgo, coordinando equipos para garantizar la calidad y el cumplimiento de los objetivos establecidos.",
           "startDate": "Feb",
           "endDate": "Mar 2019",
           "skills": [
@@ -149,11 +130,7 @@
           },
           {
           "position": "Desarrollador FrontEnd",
-          "description": [
-            "Desarrollo de páginas web interactivas, mejorando la experiencia del usuario.",
-            "Implementación de soluciones modulares, facilitando el mantenimiento y la escalabilidad del código.",
-            "Pruebas y optimización de interfaces, asegurando la calidad y el rendimiento del sitio."
-          ],
+            "description": "Construía y optimizaba las landing pages de productos propios, asegurando una experiencia de usuario fluida y atractiva. Maqueteaba diseños de interfaces siguiendo las mejores prácticas de UX/UI, mejorando la accesibilidad y el rendimiento del sitio. Implementaba soluciones responsivas para garantizar la compatibilidad con diferentes dispositivos y navegadores, y colaboraba estrechamente con el equipo de diseño para alinear los objetivos del proyecto.",
           "startDate": "Ene",
           "endDate": "Feb 2019",
           "skills": [
@@ -175,11 +152,7 @@
         "positions": [
           {
           "position": "Desarrollador FrontEnd",
-          "description": [
-            "Desarrollo de páginas web interactivas, mejorando la experiencia del usuario.",
-            "Optimización del rendimiento, asegurando tiempos de carga rápidos y una navegación fluida.",
-            "Solución de errores y mejoras, manteniendo la estabilidad y la funcionalidad del sitio."
-          ],
+          "description": "Trabajé como desarrollador junior, colaborando en proyectos web y siguiendo instrucciones para implementar el diseño del front-end, además de aportar pequeñas propuestas de mejora. Participé en tareas de desarrollo contribuyendo al diseño y funcionalidad de diversas herramientas.",
           "startDate": "Ene",
           "endDate": "Feb 2019",
           "skills": [
