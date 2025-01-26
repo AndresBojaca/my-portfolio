@@ -5,11 +5,11 @@ import React, { useEffect, useState } from "react";
 import { RxCalendar } from "react-icons/rx";
 import { IoLocationOutline } from "react-icons/io5";
 
-import SkillPill from "../ui/skillPill";
+import SkillPill from "@/components/ui/skillPill";
 
-import { getIconLogo } from "../ui/icons";
+import { getIconLogo } from "@/components/ui/icons";
 import './JobList.css';
-import type { Job } from '../../app/libs/types';
+import type { Job } from '@/app/libs/types';
 import SkeletonJobList from "./SkeletonJobList";
 
 const fetchData = async () => {
@@ -43,13 +43,10 @@ const JobList = () => {
             <li key={job.id} className="job-list-item">
               <div className="flex flex-col text-left company-job-list">
                 <div className="flex gap-3 relative mb-6">
-                  <img src={job.logoUrl} alt={job.company} className="company-img dark:bg-slate-900 bg-[#f2f2f2] animate-ld-float-btt-in" />
+                  <img src={job.logoUrl} alt={job.company} className="company-img rounded-xl dark:bg-slate-900 bg-[#f2f2f2] animate-ld-float-btt-in" />
                   <div className="flex flex-col gap-4">
-                    <span className="flex gap-2 font-bold text-lg ">
+                    <span className="flex gap-2 font-bold text-lg">
                       {job.company}
-                      {job.positions.length === 1 && job.positions[0].endDate && job.positions[0].endDate.includes("Actualidad") && (
-                        <span className="inline-block bg-gradient-to-br from-purple-600 to-blue-500 text-white text-[10px] px-3 rounded-full">Actualidad</span>
-                      )}
                     </span>
                     {job.positions.map((position, index) => (
                       <div key={index} className="relative cursor-pointer job">
@@ -62,13 +59,13 @@ const JobList = () => {
                           <RxCalendar /> {position.startDate} — {position.endDate} <IoLocationOutline className="ml-1" /> Bogotá, Colombia
                           </span>
                         </div>
-                        <div className="text-dark text-base description">
+                        <div className="text-dark text-base text-gray-500 description">
                           {
                             Array.isArray(position.description) ? (
                               <ul className="list-circle pl-4">
                                 {position.description.map((description, index) => (
                                   <li className="mb-1 last:mb-0" key={index}>
-                                    <span className="text-dark dark:text-white">
+                                    <span>
                                       {String(description)}
                                     </span>
                                   </li>

@@ -24,19 +24,23 @@ export type GithubProject = {
   description: string;
   visibility: string;
   topics: string[];
+  created_at: string;
 }
 
 export type Projects = {
   id: number;
   name: string;
   description: string;
-  url: string;
-  topics: string[];
+  href: string;
+  date: string;
+  tecnologies: string[];
 }
 
 export type ProjectCard = {
+  id: number;
   name: string;
   description: string;
   href: string;
+  date: string;
   tecnologies: string[];
 }
