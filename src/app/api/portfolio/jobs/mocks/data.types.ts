@@ -1,6 +1,6 @@
 type positions = {
     position: string;
-    description: string[];
+    description: string[] | string;
     startDate: string;
     endDate: string;
     skills: string[];
