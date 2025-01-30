@@ -7,7 +7,6 @@ import { IoLocationOutline } from "react-icons/io5";
 
 import SkillPill from "@/components/ui/skillPill";
 
-import { getIconLogo } from "@/components/ui/icons";
 import './JobList.css';
 import type { Job } from '@/app/libs/types';
 import SkeletonJobList from "./SkeletonJobList";
@@ -34,7 +33,7 @@ const JobList = () => {
   return (
     loading ? (
       <div>
-        <SkeletonJobList cant={6} />
+        <SkeletonJobList quantity={6} />
       </div>
     ) : (
       <div className="job-list-container">
@@ -55,11 +54,11 @@ const JobList = () => {
                           <p className="text-dark text-lg mb-2">
                             {position.position}
                           </p>
-                          <span className="mb-2 text-sm opacity-60 flex items-center gap-2">
+                          <span className="mb-2 text-sm text-gray-500 flex items-center gap-2">
                           <RxCalendar /> {position.startDate} — {position.endDate} <IoLocationOutline className="ml-1" /> Bogotá, Colombia
                           </span>
                         </div>
-                        <div className="text-dark text-base text-gray-500 description">
+                        <div className="text-dark text-sm text-gray-500 description">
                           {
                             Array.isArray(position.description) ? (
                               <ul className="list-circle pl-4">

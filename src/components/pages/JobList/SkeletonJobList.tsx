@@ -1,12 +1,12 @@
 import React from "react";
 
 interface Props {
-  cant: number;
+  quantity: number;
 }
 
-const SkeletonJobList: React.FC<Props> = ({ cant }) => {
+const SkeletonJobList: React.FC<Props> = ({ quantity }) => {
   const skeletonItems = [];
-  for (let index = 0; index < cant; index++) {
+  for (let index = 0; index < quantity; index++) {
     skeletonItems.push(
       <div key={index} className="animate-pulse w-full ml-[-5px]">
         <div className="flex gap-3">

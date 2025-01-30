@@ -25,6 +25,7 @@ export type GithubProject = {
   visibility: string;
   topics: string[];
   created_at: string;
+  homepage: string;
 }
 
 export type Projects = {
@@ -34,6 +35,7 @@ export type Projects = {
   href: string;
   date: string;
   tecnologies: string[];
+  homepage: string;
 }
 
 export type ProjectCard = {
@@ -43,4 +45,5 @@ export type ProjectCard = {
   href: string;
   date: string;
   tecnologies: string[];
+  homepage: string;
 }
