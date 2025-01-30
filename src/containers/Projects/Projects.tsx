@@ -6,9 +6,6 @@ import ProjectCard from "../../components/pages/ProjectCard/ProjectCard";
 import SkeletonProjectCard from "@/components/pages/ProjectCard/SkeletonProjectCard";
 import './Projects.css';
 
-//TODO #1. Poner loader
-//TODO #2. Poner mensaje de error
-
 const fetchGithubRepos = async () => {
   try {
     const response = await fetch(`https://api.github.com/users/AndresBojaca/repos`);
@@ -42,7 +39,7 @@ const Projects = () => {
 
         // Map projects
         const projects = topicsFilter.map((project: GithubProject, index: number) => {
-          const { id, name, html_url, description, topics, created_at } = project;
+          const { id, name, html_url, description, topics, created_at, homepage } = project;
           return {
             id,
             name: name,
@@ -50,8 +47,11 @@ const Projects = () => {
             href: html_url,
             tecnologies: topics,
             date: created_at,
+            homepage: homepage
           }
         });
+        console.log(projects);
+        
         setFeatures(projects);
         setLoading(false);
       })
