@@ -1,6 +1,5 @@
-import HeroSection from "../../containers/Hero/Hero";
-import JobExperience from "../../containers/JobExperience/JobExperience";
-import ThemeSwitcher from '../../components/ThemeSwitcher/ThemeSwitcher';
+import HeroSection from "@/containers/Hero/Hero";
+import JobExperience from "@/containers/JobExperience/JobExperience";
 import Projects from "@/containers/Projects/Projects";
 import { Navbar } from "@/components/layout/navbar";
 import { Onest } from "next/font/google";

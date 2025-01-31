@@ -5,6 +5,7 @@ import type { Projects, GithubProject } from '../../app/libs/types';
 import ProjectCard from "../../components/pages/ProjectCard/ProjectCard";
 import SkeletonProjectCard from "@/components/pages/ProjectCard/SkeletonProjectCard";
 import './Projects.css';
+import BlurFade from "@/components/magicui/blur-fade";
 
 const fetchGithubRepos = async () => {
   try {
@@ -51,7 +52,7 @@ const Projects = () => {
           }
         });
         console.log(projects);
-        
+
         setFeatures(projects);
         setLoading(false);
       })
@@ -69,8 +70,12 @@ const Projects = () => {
         <div className="mt-[4rem]">
           <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4">
             {loading ? <SkeletonProjectCard quantity={6} /> : (
-              features.map((feature) => (
-                <ProjectCard key={feature.id} {...feature} />
+              features.map((feature, key) => (
+                <BlurFade
+                  key={feature.id}
+                  delay={0.04 * 6 + key * 0.05}>
+                  <ProjectCard key={feature.id} {...feature} />
+                </BlurFade>
               ))
             )}
           </div>
